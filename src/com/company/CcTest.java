@@ -1,7 +1,7 @@
 package com.company;
 
 import static org.junit.Assert.*;
-
+//Hej
 /**
  * Created by cof on 2016-05-11.
  */
