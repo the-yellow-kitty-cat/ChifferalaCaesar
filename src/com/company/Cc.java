@@ -14,11 +14,11 @@ public class Cc {
         System.out.println("Enter a string");
         s = in.nextLine();
 
-//        for (int cryptoChar = 65; cryptoChar < 123; cryptoChar++) {
-//
-//            System.out.println((char) cryptoChar + " " + cryptoChar);
-//
-//        }
+        for (int cryptoChar = 65; cryptoChar < 247; cryptoChar++) {
+
+            System.out.println((char) cryptoChar + " " + cryptoChar);
+
+        }
 //        System.out.println((int)firstLetter+" "+ifBigFirstLetter);
 //        if (ifBigFirstLetter){
 //            System.out.println((char)(ifBigFirstLetter+3));
@@ -52,6 +52,7 @@ public class Cc {
         StringBuilder encryptedSentence = new StringBuilder();
 
         for (int currentLetter = 0; currentLetter < s.length(); currentLetter++) {
+
             char originalLetter = (char) (s.charAt(currentLetter)/*+currentLetter*/);
             boolean ifBigLetter = originalLetter >= 65 && originalLetter <= 90;
             boolean ifSmallLetter = originalLetter >= 97 && originalLetter <= 122;
