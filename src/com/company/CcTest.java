@@ -1,7 +1,8 @@
 package com.company;
 
+import org.junit.Ignore;
+
 import static org.junit.Assert.*;
-//Hej
 /**
  * Created by cof on 2016-05-11.
  */
@@ -25,7 +26,6 @@ public class CcTest {
         assertEquals("Pxuul rfk Jolpplv! 123567?\n" +
                 "    Pxuul&Jolpplv", testResult);
     }
-    //Pxuul
     @org.junit.Test
     public void testRebex() throws Exception {
         String s = "Rebex";
@@ -49,5 +49,12 @@ public class CcTest {
         String s = "abcdefghijklmnopqrstuvwxyz";
         String testResult = Cc.aTillZ(s);
         assertEquals("defghijklmnopqrstuvwxyzabc", testResult);
+    }
+    @org.junit.Test
+    @Ignore
+    public void testÅÄÖ() throws  Exception {
+        String s = "ÅÄÖåäö";
+        String testResult = Cc.aTillZ(s);
+        assertEquals("ABCabc", testResult);
     }
 }
