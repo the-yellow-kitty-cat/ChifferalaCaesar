@@ -34,7 +34,7 @@ public class Cc {
             char encryptedLetter = (char) (originalLetter + 3);
             char finishedEncryptedLetter;
             char backToA;
-            if /*it*/ (isBigLetter) {
+            if (isBigLetter) {
                 finishedEncryptedLetter = (char) (encryptedLetter - 65);
                 backToA = (char) (finishedEncryptedLetter % 26 + 65);
                 encryptedSentence.append(backToA);
